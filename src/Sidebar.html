@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+    <?!= include('SidebarStyle'); ?>
+  </head>
+  <body>
+    <div class='mainWrapper'>
+      <div id="generalOptions"></div>
+      <div id='xmlOptions'></div>
+      <div id='jsonOptions'></div>
+      <div id='advancedOptions'></div>
+      <div class='buttonPlaceholder'></div>
+      <div class='buttonWrapper'>
+        <div class='buttonPadding'></div>
+        <div class='centerWrapper'>
+          <button class="action" onclick="exportFile()">Export</button>
+          <button onclick="visualizeFile()">Visualize</button>
+        </div>
+      </div>
+    </div>
+    <?!= include('SidebarJavaScript'); ?>
+  </body>
+</html>
